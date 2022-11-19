@@ -1,0 +1,24 @@
+.areaContainer {
+  margin: 70px 80px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.viewContainer {
+  border-radius: 10px;
+  height: 400px;
+  width: 400px;
+  cursor: pointer;
+  background-color: burlywood;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+
+.viewContainer:hover {
+  transform: translateY(-6px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  ;
+}
