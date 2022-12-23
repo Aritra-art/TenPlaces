@@ -13,6 +13,13 @@ const Places = () => {
     <>
       <div className="placeContainer">
         {Object.keys(Data).map((place, index) => {
+          if (place === stateName) {
+            return (
+              <span key={index} onClick={placeEventHandler} className="spanBg">
+                {place}
+              </span>
+            );
+          }
           return (
             <span key={index} onClick={placeEventHandler}>
               {place}
